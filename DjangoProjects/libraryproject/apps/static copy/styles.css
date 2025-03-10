@@ -1,0 +1,80 @@
+/* Container for the links */
+.links-container {
+  text-align: center; /* Center-align the content */
+  padding: 20px; /* Add padding around the container */
+  background-color: #f9f9f9; /* Light background color */
+  border: 1px solid #ddd; /* Add a border */
+  border-radius: 5px; /* Rounded corners */
+  width: 50%; /* Set the width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Base style for all links */
+.link-style {
+  display: block; /* Make links block-level elements */
+  margin: 0; /* Remove margin between links */
+  padding: 15px; /* Add padding inside each link */
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* White text color */
+  width: 100%; /* Set the width of each link to 100% */
+  text-align: center; /* Center-align the text */
+  font-size: 16px; /* Set font size */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  border-bottom: 1px solid #ddd; /* Add a border between links */
+}
+
+/* Remove border from the last link */
+.link-style:last-child {
+  border-bottom: none;
+}
+
+/* Style for the first link */
+.link1 {
+  background-color: #90ee9c; /* Blue background */
+}
+
+.link1:hover {
+  background-color: #05aa62; /* Darker blue on hover */
+}
+
+.link1:visited {
+  background-color: #ef680e; /* Gray background for visited links */
+}
+
+.link1:active {
+  background-color: #dc3545; /* Red background when clicked */
+}
+
+/* Style for the second link */
+.link2 {
+  background-color: hsl(43, 3%, 49%); /* Yellow background */
+}
+
+.link2:hover {
+  background-color: #41403e; /* Darker yellow on hover */
+}
+
+.link2:visited {
+  background-color: #e1a22c; /* Gray background for visited links */
+}
+
+.link2:active {
+  background-color: #dc3545; /* Red background when clicked */
+}
+
+/* Style for the third link */
+.link3 {
+  background-color: #060606; /* Green background */
+}
+
+.link3:hover {
+  background-color: #0d0e0d; /* Darker green on hover */
+}
+
+.link3:visited {
+  background-color: #f77d13; /* Gray background for visited links */
+}
+
+.link3:active {
+  background-color: #dc3545; /* Red background when clicked */
+}
