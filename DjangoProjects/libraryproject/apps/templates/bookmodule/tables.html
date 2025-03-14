@@ -1,15 +1,51 @@
-{% extends "layouts/base.html" %}
 {% load static %}
 
 {% block title %} HTML5 Tables {% endblock title %}
 
 {% block content %}
+<style>
+    .styled-table1 ,th,tr,td {
+        border: 1px solid ;
+    }
+
+   .styled-table{
+    table {
+            border-collapse: collapse;
+            width: 800px;
+            font-family: Arial, sans-serif;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        
+      }
+        
+        .desert-image {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+        
+     
+        
+        .camelid-header {
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+        }
+   
+</style>
+
 <div class="tables-container">
-    <h1 class="tables-heading">Table 1: Table of Fruits and Their Prices</h1>
-    <table class="styled-table">
+    <br>
+    <caption ><b>Table 1: Table of <br>Fruits and<br> Their Prices</b></caption>
+    <table class="styled-table1">
         <thead>
             <tr>
-                <th>Fruit</th>
+                <th >Fruit</th>
                 <th>Price</th>
             </tr>
         </thead>
@@ -34,43 +70,48 @@
                 <td><strong>Total</strong></td>
                 <td><strong>$3.75</strong></td>
             </tr>
-        </tbody>
-    </table>
-
-    <h1 class="tables-heading">Table 2: A More Complex Sample Table</h1>
-    <table class="styled-table">
-        <thead>
+        </tbody> </table>
+        <br>
+        <table>
+            
+            <caption>Table 2: A more complex sample table</caption>
+        
             <tr>
-                <th> <img src="{% static 'qu-icon.png' %}" alt="QU Icon" class="table-image"></th>
+                <td rowspan="2">
+                    <img src="https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg?w=300" alt="Desert landscape" class="desert-image">
+                </td>
+                <td colspan="4" class="camelid-header">
+                    Camelid comparison<br>
+                    Approximate as of 6/2011
+                </td>
+            </tr>
+            <tr>
                 <th># of humps</th>
                 <th>Indigenous region</th>
                 <th>Spits?</th>
                 <th>Produces wool?</th>
             </tr>
-        </thead>
-        <tbody>
             <tr>
-                <td>Dromedary</td>
+                <td><b>Dromedary</b></td>
                 <td>1</td>
                 <td>Arabian Peninsula</td>
                 <td>Yes</td>
                 <td>Yes</td>
             </tr>
             <tr>
-                <td>Camels (bactrian)</td>
+                <td><b>Camels (bactrian)</b></td>
                 <td>2</td>
                 <td>Africa/Asia</td>
                 <td>Yes</td>
                 <td>Yes</td>
             </tr>
             <tr>
-                <td>Llamas</td>
+                <td><b>Llamas</b></td>
                 <td>1</td>
                 <td>Andes Mountains</td>
                 <td>Yes</td>
                 <td>Yes</td>
             </tr>
-        </tbody>
-    </table>
+        </table>
 </div>
 {% endblock content %}
